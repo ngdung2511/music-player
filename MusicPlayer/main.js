@@ -63,7 +63,10 @@ const app = {
               <h3 class="title">${song.name}</h3>
               <p class="author">${song.singer}</p>
             </div>
-            <a class="option" href="delete.php?id=${song.songId}" >
+            <a class="option" href="edit_page.php?id=${song.songId}">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a class="option" href="delete.php?id=${song.songId}">
                 <i class="fas fa-times"></i>
             </a>
           </div>
@@ -79,7 +82,7 @@ const app = {
                 return this.songs[this.currentIndex]
             }
         })
-        
+
     },
     handleEvents: function () {
         const cdWidth = cdElement.offsetWidth

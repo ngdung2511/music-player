@@ -102,7 +102,6 @@ if ($userID == null) {
   <script src="./main.js"></script>
   <script>
     app.songs = [];
-    app.deleteSong
     <?php
     if (!empty($result)) {
       while ($row = mysqli_fetch_array($result)) {
